@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Guardian Home Page
+            </title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="final.css">
+            
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+
+<style type="text/css">
+
+#myreel{ /*sample CSS for demo*/
+
+}
+
+
+
+</style>
+
+<script src="reelslideshow.js" type="text/javascript">
+
+</script>
+
+<script type="text/javascript">
+
+var firstreel=new reelslideshow({
+	wrapperid: "myreel", //ID of blank DIV on page to house Slideshow
+	dimensions: [900, 250], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["Guardian_Home_slider_1.png"], //["image_path", "optional_link", "optional_target"]
+		["Guardian_Home_slider_2.png"],
+		["Guardian_Home_slider_3.png"],
+		["Guardian_Home_slider_4.png"] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:2000, cycles:10, pauseonmouseover:true},
+	orientation: "h", //Valid values: "h" or "v"
+	persist: true, //remember last viewed slide and recall within same session?
+	slideduration: 500 //transition duration (milliseconds)
+})
+
+</script>
+
+        </head>
+        
+        
+        <body>
+
+
+            
+            <div id="background">
+    <img src="bgrd.png" class="stretch" alt="" />
+</div>
+           
+            <nav>
+                <a href="finalindex.html">Home</a>
+                
+                <a href="aboutus.html">About Us</a>
+                
+                <a href="abouthospice.html">About Hospice Care</a>
+                
+                <a href="pallativecare.html">Palliative Care Services</a>
+                
+                <a href="faq.html">FAQ</a>
+                
+                <a href="contactus.html">Contact Us</a>
+                 
+            </nav>
+            
+                <div id="logo"></div>
+                <div id="myPhoto">
+                                <div id="myreel"></div>
+                </div>
+                <div id="info">
+                    <center><h1>WELCOME TO GUARDIAN HOSPICE</h1></center>
+                    <p>
+                        Guardian Hospice offers a full service hospice care program through a staff of highly experienced, compassionate, and dedicated professionals. We provide expert care and counseling to our families and their loved ones. We know that each patient is unique and our smaller, personalized care team focuses on individualized patient and family care. The Guardian Hospice Team is dedicated to providing the best care for our patients and their extended families. Our compassionate professionals understand that we are caring for not only our patients, but their loved ones as well. The team is comprised of the following:
+                    </p>
+                    <ul>
+                        <li>Patient's Physician</li>
+                        <li>Hospice Medical Director</li>
+                        <li>Registered Nurse</li>
+                        <li>Social Worker</li>
+                        <li>Certified Nursing Assistant</li>
+                        <li>Spiritual Care Coordinator</li>
+                        <li>Bereavement Coordinator</li>
+                        <li>Volunteers</li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h2>We're Here to Help</h2>
+                    <hr width="100%">
+                    <p id="contact">Phone: (555)-555-5555</p>
+                    <p id="contact">Fax: (555)-444-4444</p>
+                    <p id="contact">9999 Deerfield Rd. Suite 401</p
+                    <p id="contact">Deerfield, IL 55464</p>
+                    <h2>Follow Us!</h2>
+                    <p id="contact">Facebook</p>
+                    <p id="contact">Twitter</p>
+                    <p id="contact">BBB</p>
+
+                    
+                </div>
+                <div id="spacer"></div>
+                <footer>&copy; OzCorp LLC</footer>
+        </body>
+    </html>
