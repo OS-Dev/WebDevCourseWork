@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset= "utf-8">
+            <title>Math with JavaScript</title>
+            
+            <style>
+                body {font-size: 24px;
+                    background-color: lightblue;
+                    }
+                    
+                input {font-size: 24px;}
+                
+                
+                input:hover {background-color: lightgreen;}
+            </style>
+            
+        </head>
+        
+            <body>
+              
+             <h1>Math with JavaScript</h1>
+             
+             <input type="text" size="5" id="box1">
+             <span id="sign">&nbsp; </span>
+             <input type="text" size="5" id="box2">
+             =
+             <span id="output"></span>
+             
+             <br><br>
+             
+             <input type="button" value="Add" onclick="addNumbers();">
+             <script>
+                //make a function to add
+                function addNumbers() {
+                //Get values from box1
+                var value1 = parseFloat(document.getElementById("box1").value);  
+                //Get values from box2
+                var value2 = parseFloat(document.getElementById("box2").value);  
+                //Add box1 and box2 together
+                var total = value1 + value2;
+                //display the answer
+                document.getElementById("output").innerHTML = total;
+                //show that plus sign
+                document.getElementById("sign").innerHTML = "+";
+                }
+                
+
+             </script>
+             <input type="button" value="Subtract" onclick="subtractNumbers();">
+             <script>
+                function subtractNumbers() {
+                var value1 = parseFloat(document.getElementById("box1").value);  
+                var value2 = parseFloat(document.getElementById("box2").value);  
+                var total = value1 - value2;
+                document.getElementById("output").innerHTML = total;
+                document.getElementById("sign").innerHTML = "-";
+                }
+                
+
+             </script>
+             <input type="button" value="Multiply" onclick="multiplyNumbers();">
+             <script>
+                function multiplyNumbers() {
+                var value1 = parseFloat(document.getElementById("box1").value);  
+                var value2 = parseFloat(document.getElementById("box2").value);  
+                var total = value1 * value2;
+                document.getElementById("output").innerHTML = total;
+                document.getElementById("sign").innerHTML = "x";
+                }
+                
+
+             </script>
+             <input type="button" value="Divide" onclick="divideNumbers();">
+             <script>
+
+                function divideNumbers() {
+                var value1 = parseFloat(document.getElementById("box1").value);  
+                var value2 = parseFloat(document.getElementById("box2").value);  
+                var total = value1 / value2;
+                document.getElementById("output").innerHTML = total;
+                document.getElementById("sign").innerHTML = "&divide";
+                }
+             </script>
+             
+             <input type="button" value="Clear" onclick="clearNumbers();">
+             <script>
+                function clearNumbers() {
+                document.getElementById("box1").value = "";
+                document.getElementById("box2").value = "";
+                document.getElementById("output").innerHTML = "";
+                document.getElementById("sign").innerHTML = "&nbsp;";
+                }
+                
+
+             </script>
+             
+            </body>
+        
+    </html>

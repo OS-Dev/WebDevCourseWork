@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+    <html>
+        <head>
+            <meta charset="8">
+            <title>
+                Customer Survey
+            </title>
+        </head>
+        <center>
+        <body bgcolor="lightblue">
+            <h1>Customer Satisfaction Survey</h1>
+<form>
+    <table border="0" cellpadding="10" cellspacing="0">
+        <thead><strong>Contact Information</strong></thead>
+        <tr>
+            <td valign="top" align="right">Your Name:</td>
+            <td><input type="text" size="20" name="name">
+            <br><br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td valign="top" align="right">E-mail Address:</td>
+            <td><input type="text" size="20" name="E-mail">
+            <br><br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td valign="top" align="right">Phone Number:</td>
+            <td><input type="text" size="20" name="phone">
+            <br><br>
+            </td>
+        </tr>
+    
+    <tr>
+        <td colspan="5" align="center"><strong>Satisfaction Survey</strong><br>(1=Unsatisfied - 5=Very Satisfied)</td>
+    </tr>
+        <tr>
+            <td></td>
+            <td>&nbsp; 1 &nbsp; &nbsp;2 &nbsp; &nbsp;3&nbsp; &nbsp; 4 &nbsp; &nbsp;5</td>
+
+        <tr>
+            <td valign="top" align="right">Products</td>
+            
+            <td>
+                <input type="checkbox" name="product" value="1">
+                <input type="checkbox" name="product" value="2">
+                <input type="checkbox" name="product" value="3">
+                <input type="checkbox" name="product" value="4">
+                <input type="checkbox" name="product" value="5">
+            </td>
+        </tr>
+         <tr>
+            <td valign="top" align="right">Warranty</td>
+            
+            <td>
+                <input type="checkbox" name="warranty" value="1">
+                <input type="checkbox" name="warranty" value="2">
+                <input type="checkbox" name="warranty" value="3">
+                <input type="checkbox" name="warranty" value="4">
+                <input type="checkbox" name="warranty" value="5">
+            </td>
+        </tr>
+         
+         <tr>
+            <td valign="top" align="right">Customer Service</td>
+            
+            <td>
+                <input type="checkbox" name="customerService" value="1">
+                <input type="checkbox" name="customerService" value="2">
+                <input type="checkbox" name="customerService" value="3">
+                <input type="checkbox" name="customerService" value="4">
+                <input type="checkbox" name="customerService" value="5">
+            </td>
+        </tr>
+         <tr>
+            <td colspan="5" align="center"><strong>Experience</strong></td>
+         </tr>
+            <td valign="top" align="right">Site Layout</td>
+            <td>
+                <select name="layout">
+                <option value="blank">N/A</option>
+                <option value="great">Great</option>
+                <option value="good">Good</option>
+                <option value="okay">Okay</option>
+                <option value="poor">Poor</option>
+                </select>
+            </td>
+            
+        <tr>
+            <td valign="top" align="right">Check Out</td>
+            <td>
+                <select name="checkOut">
+                <option value="blank">N/A</option>
+                <option value="great">Great</option>
+                <option value="good">Good</option>
+                <option value="okay">Okay</option>
+                <option value="poor">Poor</option>
+                </select>
+            </td>
+        </tr>
+ 
+         <tr>
+            <td valign="top" align="right">Overall Satisfaction</td>
+            <td>
+            <input type="radio" name="overallsatisfaction" value="excellent" checked="checked">Excellent<br>
+            <input type="radio" name="overallsatisfaction" value="good">Good<br>
+            <input type="radio" name="overallsatisfaction" value="poor">Poor
+            </td>
+
+        </tr>
+         
+        <tr>
+            <td valign="top" align="right">Comments:</td>
+            <td>
+                <textarea name="comments" cols="20" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="reset" value="Reset">&nbsp;
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+        
+    </table>
+</form>
+        
+        </body>
+        </center>  
+    </html>
